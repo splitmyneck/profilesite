@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B')
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 65%;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 4rem;
+    color: rgb(189, 166, 123);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5 ease;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.logo.hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 8rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active{
+    color: rgb(51, 51, 51);
+    border-bottom: 3px solid rgb(51, 51, 51);
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid rgb(51, 51, 51);
+        border-bottom: 3px solid rgb(51, 51, 51);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: black;
+        border-top: 0.1rem solid black;
+    }
+
+    nav.active{
+        display: black;
+    }
+
+    nav a{
+        display: black;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    nav a:hover,
+    nav a:active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid rgb(51, 51, 51);
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: black;
+}
+
+.home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: rgb(189, 166, 123);
+}
+
+.home-content h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-content p{
+    font-size: 2rem;
+    cursor: default;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 40vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid rgb(51, 51, 51);
+    cursor: default;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    background-color: 1.2rem solid rgb(51, 51, 51);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: rgb(189, 166, 123);
+    text-decoration: none;
+}
+
+.social-icons a:hover{
+    background-color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0 0 25px rgb(51, 51, 51);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: rgb(189, 166, 123);
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgb(189, 166, 123);
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 221, 163);
+    box-shadow: 0 0 25px rgb(108, 108, 108);
+}
+
+@media(max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+
+.programs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: black;
+}
+
+.prog-content h4{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prog-content p{
+    font-size: 2rem;
+    cursor: default;
+}
+
+.prog-img{
+    border-radius: 50%;
+}
+
+.prog-img img{
+    position: relative;
+    width: 40vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid rgb(51, 51, 51);
+    cursor: default;
+    transition: 0.2s linear;
+}
+
+.prog-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.btn-prog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.btn-prog a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    background-color: 1.2rem solid rgb(51, 51, 51);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+    transition: 0.3s ease;
+    color: rgb(189, 166, 123);
+    text-decoration: none;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+span1{
+    color: rgb(244, 228, 199);
+}
+
+.btn-prog span1 {
+    margin-left: 0;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.btn-prog a:hover {
+    background-color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0 0 25px rgb(51, 51, 51);
+}
+
