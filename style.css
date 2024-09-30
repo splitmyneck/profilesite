@@ -102,7 +102,7 @@ nav a:active{
 }
 
 section{
-    min-height: 100vh;
+    min-height: 60vh;
     padding: 5rem 9% 5rem;
 }
 
@@ -112,6 +112,11 @@ section{
     align-items: center;
     gap: 10rem;
     background-color: black;
+    margin-bottom: 20px;
+}
+
+.home, .programs {
+    padding-bottom: 0;
 }
 
 .home-content h1{
@@ -145,7 +150,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 40vw;
+    width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid rgb(51, 51, 51);
     cursor: default;
@@ -237,6 +242,7 @@ span{
     align-items: center;
     gap: 10rem;
     background-color: black;
+    margin-top: -10px;
 }
 
 .prog-content h4{
@@ -250,24 +256,6 @@ span{
 .prog-content p{
     font-size: 2rem;
     cursor: default;
-}
-
-.prog-img{
-    border-radius: 50%;
-}
-
-.prog-img img{
-    position: relative;
-    width: 40vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid rgb(51, 51, 51);
-    cursor: default;
-    transition: 0.2s linear;
-}
-
-.prog-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
 }
 
 .btn-prog {
@@ -314,5 +302,52 @@ span1{
     transform: scale(1.3) translateY(-5px);
     background-color: rgb(51, 51, 51);
     box-shadow: 0 0 25px rgb(51, 51, 51);
+}
+
+.about-site{
+    margin-bottom: -20px;
+}
+
+.about-site h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: black;
+    margin-bottom: 10px;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1500;
+}
+
+.about-site h3{
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+span4{
+    color: rgb(107, 107, 107);
+}
+
+.about-site span4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+}
+
+.about-site a{
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
 }
 
